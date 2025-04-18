@@ -1,12 +1,13 @@
-# decimal = int(input("Enter a number: "))
-# binary = ""
-# num = decimal
-# while num > 0:
-#     remainder = num % 2
-#     binary = str (remainder) + binary
-#     num = num // 2
-# print(f"Binary number equivalent to {decimal} is: {binary}")
+decimal = int(input("Enter a number: "))
+binary = ""
+num = decimal
+while num > 0:
+    remainder = num % 2
+    binary = str (remainder) + binary
+    num = num // 2
+print(f"Binary number equivalent to {decimal} is: {binary}")
 
+#--------------------------------------------------------------
 
 def decimal_to_binary(num):
     if num == 0:
