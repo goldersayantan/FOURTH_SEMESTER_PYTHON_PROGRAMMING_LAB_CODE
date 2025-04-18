@@ -20,3 +20,14 @@ def prime_numbers(start, stop):
 start_num = int(input("Enter the starting number: "))
 end_num = int(input("Enter the ending number: "))
 print("Prime numbers will be:", prime_numbers(start_num, end_num))
+
+#____________
+
+start = int(input("Enter the starting number: "))
+stop = int(input("Enter the ending number: "))
+for i in range(start, stop + 1):
+    for j in range(2, (i // 2) + 1):
+        if i % j == 0:
+            break
+    else:
+        print(i, end=" ")
